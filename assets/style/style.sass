@@ -1,0 +1,826 @@
+@import 'font'
+
+
+// Основные стили
+body
+    font-family: Inter, sans-serif
+    background-color: #f0f0f0
+    color: #333
+    margin: 0
+    padding: 0
+
+.lock
+    overflow: hidden
+
+// .container
+//   width: 80%
+//   margin: 0 auto
+
+
+
+li
+    list-style: none
+
+a
+    color: #FFF
+    text-decoration: none 
+    &:hover
+        color: #fff
+        text-decoration: underline
+
+
+
+// header
+
+header
+    background: #0C2A44
+    .content
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding: 8px 0
+        .center
+            display: flex
+            gap: 10px
+            justify-content: space-between
+            .info
+                display: flex
+                gap: 15px
+                a
+                    display: flex
+                    align-items: center
+                .tel
+                    font-size: 14px
+                    position: relative
+                    padding-left: 30px
+                    &::before
+                        position: absolute
+                        content: ''
+                        background: url('../img/Call.svg')
+                        width: 24px
+                        height: 24px
+                        left: 0
+                .location
+                    position: relative
+                    padding-left: 30px
+                    span
+                        display: none
+                    &::before
+                        position: absolute
+                        content: ''
+                        background: url('../img/Room.svg')
+                        width: 24px
+                        height: 24px
+                        left: 0
+            .social
+                margin-left: 25px
+                display: flex
+                justify-content: space-between
+                gap: 15px
+                // position: relative
+                .icon2
+                    position: relative
+                    content: ''
+                    width: 24px
+                    height: 24px
+
+                    &.email::before
+                        position: absolute
+                        content: ''
+                        background: url('../img/Email.svg')
+                        // left: 30px
+                        width: 24px
+                        height: 24px
+
+                    &.telegram::before
+                        position: absolute
+                        content: ''
+                        background: url('../img/tg.svg')
+                        // left: 40px
+                        width: 24px
+                        height: 24px
+
+                    &.whatsapp::before
+                        position: absolute
+                        content: ''
+                        background: url('../img/whatsapp.svg')
+                        // left: 50px
+                        width: 24px
+                        height: 24px
+
+                    &.instagram::before
+                        position: absolute
+                        content: ''
+                        background: url('../img/instagram.svg')
+                        // left: 60px
+                        width: 24px
+                        height: 24px
+            ul
+                display: flex
+                gap: 15px
+                margin: 0
+                li
+                    a
+                        color: #FFF
+                        font-size: 14px
+                        font-style: normal
+                        font-weight: 400
+                        line-height: 171.429%
+        .right
+            display: flex
+            justify-content: space-between
+            align-items: center
+            a
+                display: flex
+                padding: 8px 32px
+                justify-content: center
+                align-items: center
+                gap: 10px
+                border-radius: 8px
+                background: #C34B57
+                color: #FFF
+            .menu-btn
+                display: none
+
+// end-header
+
+.high
+    display: flex
+    height: 800px
+    padding: 0px 40px
+    align-items: center
+    flex: 1 0 0
+    background: linear-gradient(90deg, #0C2A44 0%, #103250 39.06%, rgba(18, 58, 92, 0.65) 60.42%, #0E2B46 100%), #0C2A44
+    .content
+        display: flex
+        align-items: center
+        .left
+            width: 50%
+            h1
+                color: #FFF
+                font-size: 34px
+                font-style: normal
+                font-weight: 700
+                line-height: 129.412%
+                span
+                    color: #C34B57
+            .btn-group
+                display: flex
+                gap: 15px
+                a
+                    display: flex
+                    padding: 8px 32px
+                    justify-content: center
+                    align-items: center
+                    gap: 10px
+                .main-btn
+                    border-radius: 8px
+                    background: #C34B57
+                .second-btn
+                    border-radius: 8px
+                    background: #1D3B54
+        .right
+            position: relative
+            display: flex
+            justify-content: center
+            width: 50%
+            .price
+                display: flex
+                width: 400px
+                height: 400px
+                padding: 40px 0px
+                flex-direction: column
+                justify-content: center
+                align-items: center
+                gap: 28px
+                border-radius: 1000px
+                background: radial-gradient(50% 50% at 50% 50%, #E7606E 0%, #C34B57 100%)
+                span
+                    color: #000
+                    font-size: 24px
+                    font-style: normal
+                    font-weight: 900
+                    line-height: normal
+                    text-decoration: line-through
+                p
+                    color: #FFF
+                    font-size: 40px
+                    font-style: normal
+                    font-weight: 900
+                    line-height: normal
+                a
+                    padding: 8px 32px
+                    border-radius: 8px
+                    background: #1D3B54
+            .time
+                position: absolute
+                bottom: 10px
+                right: 80px
+                display: flex
+                padding: 8px 16px 16px 16px
+                flex-direction: column
+                align-items: center
+                gap: 8px
+                border-radius: 100px
+                background: #FFF
+                p
+                    margin: 0
+                    color: #000
+                    font-size: 18px
+                    font-weight: 700
+                .day
+                    margin: 0
+                    color: #000
+                    font-size: 18px
+                    font-weight: 700
+                    display: block
+                    text-decoration: none
+                
+
+// end main
+
+// program
+
+.program
+    background: linear-gradient(90deg, #0C2A44 0%, #103250 39.06%, rgba(18, 58, 92, 0.65) 60.42%, #0E2B46 100%), #0C2A44
+    .content
+        padding: 40px
+        display: flex
+        flex-direction: column
+        gap: 24px
+        border-radius: 24px
+        background: #10395C
+        box-shadow: 0px 0px 40px -12px #113453
+        .header
+            h3
+                color: #FFF
+                font-size: 24px
+                font-weight: 900
+                line-height: normal
+        .info
+            display: flex
+            .item
+                display: flex
+                justify-content: space-between
+                flex-direction: column
+                gap: 15px
+                p
+                    text-align: center
+                    color: #FFF
+                    font-size: 16px
+                    font-weight: 500
+                    line-height: 150%
+                span
+                    color: #FFF
+                    font-size: 16px
+                    font-style: normal
+                    font-weight: 400
+                    line-height: 150%
+                    text-align: center
+                a
+                    display: flex
+                    padding: 8px 32px
+                    justify-content: center
+                    align-items: center
+                    gap: 10px
+                    border-radius: 8px
+                    background: #C34B57
+                .author
+                    width: 100%
+                    height: 52px
+                    display: flex
+                    justify-content: center
+                    position: relative
+                    &::before
+                        content: ''
+                        position: absolute
+                        background-image: url('../img/person.svg')
+                        width: 52px
+                        height: 52px
+                color: #FFF
+                +.item
+                    padding-left: 30px
+                    
+// end
+
+// about
+
+.about
+    background: linear-gradient(90deg, #0C2A44 0%, #103250 39.06%, rgba(18, 58, 92, 0.65) 60.42%, #0E2B46 100%), #0C2A44
+    padding: 80px 0
+    .header
+        display: flex
+        justify-content: center
+        margin-bottom: 40px
+        h2
+            color: #FFF
+            text-align: center
+            font-size: 32px
+            font-weight: 900
+            text-transform: uppercase
+    .info
+        display: flex
+        .left
+            width: 35%
+            display: flex
+            flex-direction: column
+            img
+                max-width: 383px
+                width: 100%
+                height: 600px
+                object-fit: cover
+            h3
+                color: #FFF
+                font-size: 32px
+                font-weight: 700
+                line-height: normal
+            span
+                color: #E7606E
+                font-size: 24px
+                font-weight: 700
+                line-height: normal
+                margin: 15px 0
+            p
+                color: #FFF
+                font-size: 24px
+                font-weight: 700
+                line-height: normal
+        .right
+            .content
+                display: flex
+                flex-direction: column
+                gap: 24px
+                .info
+                    .text        
+                        color: #FFF
+                        transform: rotate(180deg)
+                        font-size: 32px
+                        font-weight: 900
+                        line-height: normal
+                        text-transform: uppercase 
+                        writing-mode: vertical-rl
+                        text-align: end
+                    .content
+                        display: grid
+                        grid-template-columns: 1fr 1fr
+                        column-gap: 30%
+                        row-gap: 24px
+                        .item
+                            width: 100%
+                            max-width: 240px
+                            display: flex
+                            flex-direction: column
+                            align-items: center
+                            gap: 16px
+                            p
+                                margin: 0
+                                color: #FFF
+                                text-align: center
+                                font-size: 20px
+                                font-weight: 700
+                                line-height: 140%
+                            span
+                                color: #FFF
+                                text-align: center
+                                font-size: 16px
+                                font-weight: 500
+                                line-height: 175% 
+
+// results
+
+.results
+    padding-bottom: 55px
+    background: linear-gradient(90deg, #0C2A44 0%, #103250 39.06%, rgba(18, 58, 92, 0.65) 60.42%, #0E2B46 100%), #0C2A44
+    .header
+        padding: 40px
+        border-radius: 24px
+        background: radial-gradient(50% 50% at 50% 50%, #E7606E 0%, #C34B57 100%)
+        box-shadow: 0px 0px 40px -12px #113453
+        display: flex
+        p
+            color: #FFF
+            font-size: 16px
+            font-weight: 500
+            line-height: 150%
+            flex: 1 0 0
+        a
+            display: flex
+            align-items: center
+            padding: 8px 32px
+            border-radius: 8px
+            background: #1D3B54
+    .info
+        margin-top: 40px
+        display: flex
+        flex-direction: column
+        align-items: center
+        gap: 15px
+        .old-price
+            margin: 0
+            color: #FFF
+            font-size: 20px
+            font-weight: 900
+            line-height: 140%
+            text-decoration: line-through
+        .price
+            margin: 0
+            color: #FFF
+            font-size: 36px
+            font-weight: 900
+            line-height: normal
+        span
+            color: #FFF
+            font-size: 16px
+            font-weight: 700
+            line-height: 150%
+        a
+            display: flex
+            align-items: center
+            border-radius: 8px
+            background: #C34B57
+            padding: 8px 32px
+
+.question
+    background: linear-gradient(90deg, #0C2A44 0%, #103250 39.06%, rgba(18, 58, 92, 0.65) 60.42%, #0E2B46 100%), #0C2A44
+    padding-bottom: 40px
+    .header
+        p
+            color: #FFF
+            font-size: 24px
+            font-weight: 900
+            text-transform: uppercase
+    .info
+        .accordion-item
+            padding: 16px
+            margin-top: 24px
+            border-radius: 16px
+            background: #10395C
+            .accordion-button
+                box-shadow: none
+                padding: 16px 0
+                background: #10395C
+                color: #FFF
+                font-size: 24px
+                font-weight: 500
+                line-height: 133.333%
+            p
+                color: #FFF
+                font-size: 16px
+                font-weight: 400
+                line-height: 150%
+
+footer
+    background: linear-gradient(90deg, #0C2A44 0%, #103250 39.06%, rgba(18, 58, 92, 0.65) 60.42%, #0E2B46 100%), #0C2A44
+    padding: 16px
+    .content
+        display: flex
+        align-items: center
+        justify-content: space-between
+        .left
+            display: flex
+            .info
+                display: flex
+                gap: 10px
+                .tel
+                    position: relative
+                    padding-left: 30px
+                    &::before
+                        left: 0
+                        content: ''
+                        position: absolute
+                        background: url('../img/Call.svg')
+                        width: 24px
+                        height: 24px
+                .location
+                    position: relative
+                    padding-left: 30px
+                    &::before
+                        left: 0
+                        content: ''
+                        position: absolute
+                        background: url('../img/Room.svg')
+                        width: 24px
+                        height: 24px
+            .social
+                    margin-left: 25px
+                    display: flex
+                    justify-content: space-between
+                    gap: 15px
+                    // position: relative
+                    .icon2
+                        position: relative
+                        content: ''
+                        width: 24px
+                        height: 24px
+
+                        &.email::before
+                            position: absolute
+                            content: ''
+                            background: url('../img/Email.svg')
+                            // left: 30px
+                            width: 24px
+                            height: 24px
+
+                        &.telegram::before
+                            position: absolute
+                            content: ''
+                            background: url('../img/tg.svg')
+                            // left: 40px
+                            width: 24px
+                            height: 24px
+
+                        &.whatsapp::before
+                            position: absolute
+                            content: ''
+                            background: url('../img/whatsapp.svg')
+                            // left: 50px
+                            width: 24px
+                            height: 24px
+
+                        &.instagram::before
+                            position: absolute
+                            content: ''
+                            background: url('../img/instagram.svg')
+                            // left: 60px
+                            width: 24px
+                            height: 24px
+
+@media screen and (max-width: 1440px) 
+    .program
+        .content
+            .info
+                flex-wrap: wrap
+                justify-content: space-between
+                gap: 20px
+                .item
+                    width: 48%
+
+@media screen and (max-width: 1200px)
+    header 
+        .content 
+            .center 
+                .info 
+                    .tel
+                        span
+                            display: none
+
+    .about
+        .info
+            flex-direction: column
+            .left
+                width: 100%
+                display: flex
+                align-items: center
+            .right
+                .content
+                    .info
+                        .text
+                            transform: none
+                            writing-mode: unset
+                            text-align: center
+                            
+
+
+@media screen and (max-width: 1024px) 
+    .menu-btn
+        display: block !important
+        margin: 0
+        width: 30px
+        height: 30px
+        position: relative
+        z-index: 2
+        overflow: hidden
+
+    .bar
+        width: 30px
+        height: 4px
+        position: absolute
+        top: 50%
+        left: 50%
+        border-radius: 4px
+        transform: translate(-50%, -50%)
+        background-color: white
+        transition: all 0.3s ease-in-out
+
+        &:nth-of-type(2)
+            top: calc(50% - 9px)
+
+        &:nth-of-type(3)
+            top: calc(50% + 9px)
+    .menu-btn.active .bar
+        &:nth-of-type(1)
+            display: none
+
+        &:nth-of-type(2)
+            top: 50%
+            transform: translate(-50%, 0%) rotate(45deg)
+
+        &:nth-of-type(3)
+            top: 50%
+            transform: translate(-50%, 0%) rotate(-45deg)
+
+    .burger-nav
+        position: fixed
+        top: 0
+        left: 0
+        z-index: 1
+        width: 100%
+        height: 100%
+        padding: 15px
+        background: linear-gradient(90deg, #0C2A44 0%, #103250 39.06%, rgba(18, 58, 92, 0.65) 60.42%, #0E2B46 100%), #0C2A44
+        transform: translateX(100%)
+        transition: transform 0.5s
+        &.active
+            transform: translateX(0)
+            .center
+                padding-top: 80px
+                display: flex
+                flex-direction: column-reverse
+                .social
+                    justify-content: start
+                .tel
+                    margin-left: 25px
+                .icon
+                    span
+                        display: block !important
+                ul
+                    flex-direction: column
+                
+
+    header 
+        .content 
+            .center
+                display: none
+            .right
+                a
+                    display: none
+    .high 
+        .content
+            .left
+                h1
+                    font-size: 30px 
+            .right
+                justify-content: end 
+                .price
+                    width: 343px
+                    height: 343px
+                    gap: 10px
+                    p
+                        margin: 0
+                .time
+                    padding: 0
+                    background: none
+                    position: static
+                    .day
+                        display: inline    
+    .results 
+        .header
+            padding: 30px
+            align-items: end 
+            a
+                height: 38px
+            p
+                font-size: 14px
+    
+    .question 
+        .info 
+            .accordion-item 
+                .accordion-button
+                    padding: 10px 0
+                    font-size: 20px
+
+    .about 
+        .info 
+            .right 
+                .content 
+                    .info 
+                        .text
+                            font-size: 28px
+            
+@media screen and (max-width: 991px) 
+        .about 
+            .info
+                gap: 20px 
+                .right 
+                    .content 
+                        .info 
+                            .content
+                                gap: 20px !important
+                                .item
+                                    max-width: none
+        footer
+            .content 
+                .left
+                    flex-direction: column-reverse
+                    gap: 14px
+                .social
+                    justify-content: center !important
+
+@media screen and (max-width: 768px)
+    .high 
+        .content
+            flex-direction: column
+            gap: 40px
+            .left
+                width: 100%
+            .right
+                width: 100%
+                justify-content: center
+
+    .program 
+        .content
+            .header
+                h3
+                    text-align: center
+                    font-size: 20px 
+            .info 
+                .item
+                    align-items: center
+                    width: 100%
+                    justify-content: space-between
+                    a
+                        width: 178px
+                    span
+                        width: 50%
+                    +.item
+                        padding: 0
+
+    .about
+        .header 
+            justify-content: start
+            margin-bottom: 34px
+            h2
+                font-size: 24px
+        .info
+            .left
+                h3
+                    margin-bottom: 16px
+                span
+                    font-size: 20px
+                p
+                    font-size: 20px
+            .right
+                .content 
+                    .info 
+                        .text
+                            font-size: 22px
+                        .content
+                            .item
+                                max-width: none
+                                img
+                                    width: 100%
+                                    object-fit: cover
+                                p
+                                    font-size: 18px
+    .results 
+        .header
+            flex-direction: column
+
+    footer
+        .content
+            flex-direction: column
+            .left
+                .social
+                    margin-left: 0
+
+@media screen and (max-width: 460px) 
+    header 
+        .content 
+            .center 
+                .info
+                    flex-wrap: wrap
+                    .location
+                        margin-left: 25px  
+
+
+@media screen and (max-width: 414px)
+    .high
+        padding: 0 
+        .content 
+            .left 
+                h1
+                    font-size: 24px
+            .right
+                .price
+                    gap: 16px
+                    width: 300px
+                    height: 300px
+                    p
+                        font-size: 36px
+                    span
+                        font-size: 20px
+                .time
+                    .text-day
+                        font-size: 18px
+    footer 
+        .content 
+            .left 
+                .info
+                    flex-direction: column
+                    align-items: center
+
+
+
+      
+
+
